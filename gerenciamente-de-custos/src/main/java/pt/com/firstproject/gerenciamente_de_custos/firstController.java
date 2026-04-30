@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/firstproject")        // Define que a minha aplicação vai ser controlada/gerenciada por Spring Boot, e o caminho para acessar a aplicação será "localhost:8080/firstproject"
 @RestController   // Define que a classe é um controlador REST, ou seja, ela vai lidar com requisições HTTP e retornar respostas em formato JSON ou XML.
-public class firstController {
+public class FirstController {
     
     @GetMapping("/helloworld")   // Define que o método helloWorld() vai ser acessado através de uma requisição GET no caminho "localhost:8080/firstproject/helloworld"
     public String helloWorld() {
