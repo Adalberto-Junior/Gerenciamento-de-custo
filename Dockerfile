@@ -2,7 +2,8 @@
 FROM maven:3.8.6-eclipse-temurin-17 as builder
 WORKDIR /app
 COPY . .
-RUN mvn clear package -DskipTests
+RUN mvn clean package -DskipTests
+
 
 # Usa uma imagem do JDK para rodar o .jar gerado
 # Java 17
