@@ -5,7 +5,6 @@ COPY . .
 RUN mvn clear package -DskipTests
 
 # Usa uma imagem do JDK para rodar o .jar gerado
-# Java 17
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
