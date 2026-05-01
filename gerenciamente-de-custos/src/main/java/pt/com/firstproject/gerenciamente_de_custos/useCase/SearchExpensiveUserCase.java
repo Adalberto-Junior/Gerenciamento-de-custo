@@ -4,12 +4,10 @@ import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
-import pt.com.firstproject.gerenciamente_de_custos.custum_message.ErrorMessage;
+
+
 import pt.com.firstproject.gerenciamente_de_custos.model.Expense;
 import pt.com.firstproject.gerenciamente_de_custos.repository.ExpenseRepository;
 
